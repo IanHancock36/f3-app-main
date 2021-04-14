@@ -14,7 +14,7 @@ function Header() {
         <Container maxWidth='xl'>
             <Paper>
                 <Typography>
-                    POOP
+                   
                 </Typography>
 
             </Paper>

@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
 import Navbar from './Navbar'
 import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
+import FormControl from '@material-ui/core/FormControl';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-
+import InputLabel from '@material-ui/core/InputLabel';
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(3),
@@ -15,55 +15,58 @@ const useStyles = makeStyles((theme) => ({
 
 
 function Contact() {
-    const [firstname, setFirstName] = useState('')
-    const [lastname, setLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const classes = useStyles()
+    const [firstname, setFirstName] = useState('Name')
+    const [lastname, setLastName] = useState('Last Name')
+    const [email, setEmail] = useState('Email')
+    const [message, setMessage] = useState('What do you want to tell us?')
 
     const handleSubmit = event => {
         event.preventDefault()
         setFirstName(event.target.value)
     }
+
+        const handleChange = (event) => {
+            setFirstName(event.target.value);
+          }
+    
     return (
         <div>
-            <Navbar />
-      
-        <input type='text'
-               label="First Name"
-               name= 'firstname'
-               value={firstname}
-               onChange = {(event)=> setFirstName(event.target.value)}
-               /> 
-        <input type='text'
-               label="Last Name"
-               name= 'lastname'
-               value={lastname}
-               onChange = {(event)=> setLastName(event.target.value)}
-            /> 
-         <input type='text'
-               label="Email"
-               name= 'email'
-               value={email}
-               onChange = {(event)=> setEmail(event.target.value)}
-            /> 
-         <input type='text'
-               label="Last Name"
-               name= 'lastname'
-               value={lastname}
-               onChange = {(event)=> setLastName(event.target.value)}
-            /> 
-
-<div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
-      </div>
-
-
-       <button onSubmit={handleSubmit}>
            
-       </button>
-       
-        </div>
+
+            <FormControl variant="outlined">
+        <InputLabel htmlFor="component-outlined">First Name</InputLabel>
+        <OutlinedInput id="component-outlined" value={firstname} onChange={handleChange} label="FirstName" />
+      </FormControl>
+
+      <FormControl variant="outlined">
+        <InputLabel htmlFor="component-outlined">Last Name</InputLabel>
+        <OutlinedInput id="component-outlined" value={lastname} onChange={handleChange} label="LastName" />
+      </FormControl>
+
+      <FormControl variant="outlined">
+        <InputLabel htmlFor="component-outlined">Email</InputLabel>
+        <OutlinedInput id="component-outlined" value={email} onChange={handleChange} label="Email" />
+      </FormControl>
+      
+      
+        <TextField
+          id="filled-helperText"
+          label="Please Reach Out"
+          defaultValue="Message"
+          onChangeCapture={handleChange}
+          variant="outlined"
+        />
+
+        <Button variant='outlined' color='primary'>Submit</Button>
+      
+      
+        
+        
+        
+        </div>  
+
+
     )
 }
 
