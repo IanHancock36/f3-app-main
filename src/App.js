@@ -7,9 +7,9 @@ import Contact from './Components/Contact'
 function App() {
   return (
     <div className="App">
-     <Navbar />
-      <Header />
-      <Body /> 
+     {/* <Navbar /> */}
+      {/* <Header />
+      <Body />  */}
       <Contact /> 
    
     

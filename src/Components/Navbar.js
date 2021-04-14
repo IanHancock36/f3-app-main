@@ -29,7 +29,7 @@
         <div className={classes.root}>
           
           
-          <AppBar maxWidth='xl' position="static">
+          <AppBar maxWidth='xs' position="static">
               <Toolbar>
               <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                 <MenuIcon />
