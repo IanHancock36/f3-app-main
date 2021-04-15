@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-function Contact() {
+const Contact = () => {
     const classes = useStyles()
     const [firstname, setFirstName] = useState('Name')
     const [lastname, setLastName] = useState('Last Name')

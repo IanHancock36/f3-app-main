@@ -1,4 +1,5 @@
     import React from 'react';
+    import { Link } from 'react-router-dom';
     import { makeStyles } from '@material-ui/core/styles';
     import AppBar from '@material-ui/core/AppBar';
     import Toolbar from '@material-ui/core/Toolbar';
@@ -20,7 +21,7 @@
       },
     }));
     
-    export default function ButtonAppBar() {
+    const Navbar =() => {
       const classes = useStyles();
     
       return (
@@ -31,18 +32,30 @@
           
           <AppBar maxWidth='xs' position="static">
               <Toolbar>
-              <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+              <IconButton 
+                edge="start" 
+                className={classes.menuButton} 
+                color="inherit" 
+                aria-label="menu">
                 <MenuIcon />
               </IconButton>
-              <Typography variant="h6" className={classes.title}>
+             
+              <Typography 
+                
+                variant="h6" 
+                className={classes.title}>
                 
               </Typography>
               <Button color="inherit">
                   <HomeIcon />
               </Button>
+              <Button  component = {Link} to ="/about" color="inherit">About</Button>
+              <Button component ={Link} to= "/contact" color="inherit">Contact</Button>
+
             </Toolbar>
           </AppBar>
         </div>
       );
     }
-
+export default Navbar
+// switch the menu and home button around after I get routing done. 

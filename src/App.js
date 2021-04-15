@@ -1,16 +1,31 @@
 
-import Header from './Components/Header'
+
 import './index.css'
-import Body from './Components/Body'
+import Home from './Components/Home'
+import About from './Components/About'
 import Navbar from './Components/Navbar'
 import Contact from './Components/Contact'
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-     {/* <Navbar /> */}
-      {/* <Header />
-      <Body />  */}
-      <Contact /> 
+    
+    
+    <Router>
+    <Navbar />
+    <Switch>
+      <Route exact path ="/"component={Home}/>
+      <Route path ="/about" component = {About} /> 
+      <Route path ="/contact" component = {Contact} /> 
+
+     
+    </Switch>
+    </Router>
+    
+     
+      
+    
+      {/* <Contact />  */}
    
     
     </div>
