@@ -5,8 +5,6 @@
     import Toolbar from '@material-ui/core/Toolbar';
     import Typography from '@material-ui/core/Typography';
     import Button from '@material-ui/core/Button';
-    import IconButton from '@material-ui/core/IconButton';
-    import MenuIcon from '@material-ui/icons/Menu';
     import HomeIcon from '@material-ui/icons/Home';
     
     const useStyles = makeStyles((theme) => ({
@@ -32,25 +30,27 @@
           
           <AppBar maxWidth='xs' position="static">
               <Toolbar>
-              <IconButton 
+              {/* <IconButton 
                 edge="start" 
                 className={classes.menuButton} 
                 color="inherit" 
                 aria-label="menu">
                 <MenuIcon />
-              </IconButton>
-             
+              </IconButton> */}
+              <Button component = {Link} to = "/"color="inherit">
+                  <HomeIcon /> 
+              </Button>
               <Typography 
                 
                 variant="h6" 
                 className={classes.title}>
                 
               </Typography>
-              <Button color="inherit">
-                  <HomeIcon />
-              </Button>
+             
+              
               <Button  component = {Link} to ="/about" color="inherit">About</Button>
-              <Button component ={Link} to= "/contact" color="inherit">Contact</Button>
+              <Button  component = {Link} to ="/videos" color="inherit">Videos</Button>
+              <Button component =  {Link} to= "/contact" color="inherit">Contact</Button>
 
             </Toolbar>
           </AppBar>
@@ -58,4 +58,4 @@
       );
     }
 export default Navbar
-// switch the menu and home button around after I get routing done. 
+ 

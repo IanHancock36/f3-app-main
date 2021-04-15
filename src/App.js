@@ -5,7 +5,8 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Navbar from './Components/Navbar'
 import Contact from './Components/Contact'
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import Videos from './Components/Videos'
+import {BrowserRouter as Router, Route,  Switch} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
     <Switch>
       <Route exact path ="/"component={Home}/>
       <Route path ="/about" component = {About} /> 
+      <Route path ='/videos' component={Videos} />
       <Route path ="/contact" component = {Contact} /> 
 
      
