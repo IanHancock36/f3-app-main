@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import { CardMedia } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +20,9 @@ const Videos =() => {
 
   return (
     <div className={classes.root}>
-      <Paper elevation ={6} />
+      <Paper variant ='outlined'>
+      
+      </Paper> 
       <Paper elevation ={6} />
       <Paper elevation ={6} />
       <Paper elevation ={6} />
@@ -30,3 +33,7 @@ const Videos =() => {
 }
 
 export default Videos 
+
+// need to see how to add video on either card or paper element 
+    // this will help for the home page as well. 
+    

@@ -59,3 +59,6 @@
     }
 export default Navbar
  
+
+
+// add Navbar color change to Black or something pleasing and for all buttons as well. 
