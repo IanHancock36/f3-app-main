@@ -1,7 +1,7 @@
-import firebase from 'firebase/firebase-app'
-import 'firebase/firebase-auth'
-import 'firebase/firebase-database'
-import 'firebase/firebase-firestore'
+import firebase from 'firebase/app' // doing import firebase from 'firebase' or import * as firebase from firebase is not good practice.
+import 'firebase/auth'
+import 'firebase/database'
+import 'firebase/firestore';
 import Axios from 'axios'
 
 

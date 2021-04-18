@@ -1,1 +1,5 @@
-{}
+{
+  "projects": {
+    "default": "f3app1"
+  }
+}
