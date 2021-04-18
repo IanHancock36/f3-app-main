@@ -5,7 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Container } from '@material-ui/core';
 import {Grid} from '@material-ui/core'
 import {Typography} from '@material-ui/core'
-// import { useForm, ValidationError } from '@formspree/react';
+
+
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -29,17 +30,18 @@ const Contact = () => {
     const [lastname, setLastName] = useState('Last Name')
     const [email, setEmail] = useState('Email')
     const [message, setMessage] = useState('What do you want to tell us?')
-
+  
+  
     const handleSubmit = event => {
         event.preventDefault()
         setFirstName(event.target.value)
     }
 
-        const handleChange = (event) => {
-            setMessage(event.target.value);
-          }
+    const handleChange = (event) => {
+      setMessage(event.target.value);
+    }
     
-    return (
+        return (
       <Container className={classes.container}  maxWidth='xl'>
         
         <form>

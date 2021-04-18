@@ -47,7 +47,7 @@
                 
               </Typography>
              
-              
+              <Button  component = {Link} to ="/formspree" color="inherit">Formspree</Button>
               <Button  component = {Link} to ="/about" color="inherit">About</Button>
               <Button  component = {Link} to ="/videos" color="inherit">Videos</Button>
               <Button component =  {Link} to= "/contact" color="inherit">Contact</Button>

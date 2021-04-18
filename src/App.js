@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import Contact from './Components/Contact'
 import Videos from './Components/Videos'
+import FormspreeContact from './Components/FormspreeContact'
 import {BrowserRouter as Router, Route,  Switch} from 'react-router-dom'
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <Route path ="/about" component = {About} /> 
       <Route path ='/videos' component={Videos} />
       <Route path ="/contact" component = {Contact} /> 
+      <Route path ="/formspree" component = {FormspreeContact} /> 
+
 
      
     </Switch>
