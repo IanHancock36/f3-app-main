@@ -42,12 +42,12 @@ const Contact = () => {
     }
     
         return (
-      <Container className={classes.container}  maxWidth='xl'>
+      <Container className={classes.container}  maxWidth='xs'>
         
         <form>
-          <div className={classes.root}>
-         <Typography variant ='h4' component='h4' gutterBottom justifyContent='center'>Contact Us </Typography>
-         </div>
+          <Container className={classes.root} maxWidth='xs'>
+         <Typography variant ='h4' component='h4' gutterBottom align='center'>Contact Us </Typography>
+         </Container>
         <Grid container spacing ={3}>
           <Grid item xs ={12}>
           <Grid container spacing ={3}>
@@ -92,7 +92,7 @@ const Contact = () => {
       <Grid item xs ={12}>
       <TextField
                    variant = 'outlined'
-                   fullWidth
+                   maxWidth
                    name ='message'
                    type='text' 
                    label ='Message'
