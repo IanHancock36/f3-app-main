@@ -1,13 +1,11 @@
 import React,{useState} from 'react'
-import Navbar from './Navbar'
 import Button from '@material-ui/core/Button';
-
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-
 import { Container } from '@material-ui/core';
 import {Grid} from '@material-ui/core'
 import {Typography} from '@material-ui/core'
+// import { useForm, ValidationError } from '@formspree/react';
 
 const useStyles = makeStyles((theme) => ({
   container: {

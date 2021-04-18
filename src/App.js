@@ -4,14 +4,13 @@ import './index.css'
 import Home from './Components/Home'
 import About from './Components/About'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 import Contact from './Components/Contact'
 import Videos from './Components/Videos'
 import {BrowserRouter as Router, Route,  Switch} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-    
-    
     <Router>
     <Navbar />
     <Switch>
@@ -22,14 +21,10 @@ function App() {
 
      
     </Switch>
+    
+    <Footer /> 
+
     </Router>
-    
-     
-      
-    
-   
-   
-    
     </div>
   );
 }

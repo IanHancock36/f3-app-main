@@ -5,7 +5,7 @@
     import Toolbar from '@material-ui/core/Toolbar';
     import Typography from '@material-ui/core/Typography';
     import Button from '@material-ui/core/Button';
-   
+    import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
     
     const useStyles = makeStyles((theme) => ({
       root: {
@@ -38,7 +38,7 @@
                 <MenuIcon />
               </IconButton> */}
               <Button component = {Link} to = "/"color="inherit">
-                  Home
+              <HomeOutlinedIcon fontSize='medium' />
               </Button>
               <Typography 
                 
