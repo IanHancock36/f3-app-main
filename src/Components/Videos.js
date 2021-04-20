@@ -116,6 +116,8 @@ export default Videos
 
 // need to see how to add video on either card or paper element 
     // this will help for the home page as well. 
+      // 4/20/2021 
+        // how to center the videos and get correct video links to pop up. 
     
 
     

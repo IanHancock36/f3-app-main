@@ -5,7 +5,7 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
-// import Contact from './Components/ContactOld'
+import StripeContainer from "./Components/Stripe/StripeContainer";
 import Contact from './Components/Contact'
 import Videos from './Components/Videos'
 import {BrowserRouter as Router, Route,  Switch} from 'react-router-dom'
@@ -25,9 +25,11 @@ function App() {
      
     </Switch>
     
+    
     <Footer /> 
-
+    <StripeContainer />
     </Router>
+    
     </div>
   );
 }

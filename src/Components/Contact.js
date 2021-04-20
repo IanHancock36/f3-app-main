@@ -7,6 +7,7 @@ import { Container } from '@material-ui/core';
 import {Grid} from '@material-ui/core'
 import {Typography} from '@material-ui/core'
 import Box from '@material-ui/core/Box';
+import Card from '@material-ui/core/Card'
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -34,10 +35,10 @@ function Contact() {
                 </Box>
 	}
 	return (
-        <Container className= {classes.container} gutterBottom maxWidth ='xs'>
-
+        <Container className= {classes.container} gutterBottom maxWidth ='xs' >
+        
 		<form onSubmit={handleSubmit}>
-            <Container className = {classes.root}  maxWidth='xs'>
+            <Container className = {classes.root}   maxWidth='xs'>
                 <Typography variant ='h4' gutterBottom align='center'>Contact </Typography>
             </Container>
             <Grid container spacing ={3}>
@@ -91,6 +92,7 @@ function Contact() {
             </Grid>
             </Grid>
 		</form>
+        
         </Container>
 	);
 }
