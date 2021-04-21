@@ -19,7 +19,7 @@ function App() {
       <Route path ="/about" component = {About} /> 
       <Route path ='/videos' component={Videos} />
       <Route path ="/contact" component = {Contact} /> 
-      
+      <StripeContainer /> 
 
 
      
@@ -27,9 +27,9 @@ function App() {
     
     
     <Footer /> 
-    <StripeContainer />
+
     </Router>
-    
+    <StripeContainer /> 
     </div>
   );
 }
@@ -56,4 +56,10 @@ export default App;
 
 // NEED TO SEARCH INSIDE THIS APP 
   // 
+
+
+
+// Need to remember out what .config() is again 
+  // What is CORS 
+    // What is BODY PARSER 
   
